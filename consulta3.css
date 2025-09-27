@@ -1,0 +1,85 @@
+/* Usar las mismas clases para consistencia */
+.form-container,
+.resultado {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #ff5733;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #e04e2a;
+}
+
+.resultado {
+    background-color: #e6f2ff;
+    border-left: 6px solid #007bff;
+    color: #004a99;
+}
+
+.resultado p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.resaltado {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #ff5733;
+}
+
+.resaltado.green {
+    color: #28a745;
+}
+
+.notas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}

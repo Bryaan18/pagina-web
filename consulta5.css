@@ -1,0 +1,127 @@
+/* consulta1.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fafafa;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #f7a01a;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.form-container {
+    background: #fff;
+    max-width: 520px;
+    margin: 30px auto;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f7a01a;
+}
+
+.costo-base {
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: #fff3cd;
+    color: #856404;
+    padding: 12px 15px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 25px;
+    border: 1px solid #ffeeba;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #f7a01a;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #d48806;
+    outline: none;
+}
+
+button {
+    background-color: #f7a01a;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(247, 160, 26, 0.5);
+}
+
+button:hover {
+    background-color: #d48806;
+    box-shadow: 0 6px 15px rgba(212, 136, 6, 0.7);
+}
+
+.resultado {
+    background-color: #fff8e1;
+    border: 1px solid #f7a01a;
+    padding: 25px 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(247, 160, 26, 0.15);
+}
+
+.resultado h2 {
+    margin-top: 0;
+    color: #b57000;
+}
+
+.resultado p {
+    font-size: 1.05rem;
+    margin: 12px 0;
+}
+
+.resaltado {
+    font-weight: 700;
+    color: #333;
+}
+
+.pago-final {
+    font-size: 1.6rem;
+    color: #d9534f;
+    font-weight: 900;
+    margin-top: 15px;
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px 15px;
+        margin: 20px 15px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}

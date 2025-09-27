@@ -1,0 +1,113 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    padding: 20px;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    background-color: #ffffff;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #007bff;
+}
+
+/* Grupos de entrada */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Botón */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Resultado */
+.resultado {
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: #e9f7ef;
+    border-left: 6px solid #28a745;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.resultado h2 {
+    margin-bottom: 15px;
+    color: #28a745;
+}
+
+.resultado p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.resaltado {
+    font-weight: bold;
+    color: #333;
+}
+
+.resaltado.green {
+    color: #28a745;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .form-container, .resultado {
+        padding: 20px;
+        margin: 20px 10px;
+    }
+}

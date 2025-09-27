@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Pedido</title>
+  <link rel="stylesheet" href="pedidos.css">
+</head>
+<body>
+
+<header>
+  <h1>Formulario de Pedido</h1>
+</header>
+
+<main>
+  <form action="https://formsubmit.co/tu_correo@gmail.com" method="post">
+
+    <label for="txtnombre">Nombres:</label>
+    <input type="text" id="txtnombre" name="txtnombre" required>
+
+    <label for="txtapellidos">Apellidos:</label>
+    <input type="text" id="txtapellidos" name="txtapellidos" required>
+
+    <label for="txtcorreo">Correo:</label>
+    <input type="email" id="txtcorreo" name="txtcorreo" required>
+
+    <label for="txttelefono">Teléfono:</label>
+    <input type="tel" id="txttelefono" name="txttelefono" pattern="[0-9]{9}" placeholder="Ej: 987654321" required>
+
+    <label for="cboproducto">Producto:</label>
+    <select name="cboproducto" id="cboproducto" required>
+      <option value="">-- Selecciona un producto --</option>
+      <option value="laptop">Laptop</option>
+      <option value="smartphone">Smartphone</option>
+      <option value="accesorios">Accesorios</option>
+      <option value="otros">Otros</option>
+    </select>
+
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
+
+    <label for="cbopago">Método de Pago:</label>
+    <select name="cbopago" id="cbopago" required>
+      <option value="">-- Selecciona un método --</option>
+      <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+      <option value="transferencia">Transferencia Bancaria</option>
+      <option value="contraentrega">Pago Contra Entrega</option>
+    </select>
+
+    <label for="txtSalida">Comentarios adicionales:</label>
+    <textarea id="txtSalida" name="txtSalida" rows="4" placeholder="Escribe detalles de tu pedido (ej: color, modelo, dirección de entrega)"></textarea>
+
+    <button type="submit">Enviar Pedido</button>
+  </form>
+</main>
+
+<footer>
+  <p>© 2025 - Tienda Online Segura</p>
+</footer>
+
+</body>
+</html>
